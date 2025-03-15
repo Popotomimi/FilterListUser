@@ -1,0 +1,43 @@
+<div class="user-details">
+  <mat-list>
+    <mat-list-item class="u-text-aling-center">
+      <span class="mat-h2">Detalhes do Usuário</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <span class="mat-h2">Nome: </span>
+      <span class="mat-h3">{{ user.nome }}</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <span class="mat-h2">Email: </span>
+      <span class="mat-h3">{{ user.email }}</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <span class="mat-h2">Telefone: </span>
+      <span class="mat-h3">{{ user.telefone | phone }}</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <span class="mat-h2">Endereço: </span>
+      <span class="mat-h3">{{ user.endereco | address }}</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <span class="mat-h2">Status: </span>
+      <span class="mat-h3">{{ user.ativo | status }}</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <span class="mat-h2">Função: </span>
+      <span class="mat-h3">{{ user.funcao }}</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>
+      <span class="mat-h2">Data de Cadastro: </span>
+      <span class="mat-h3">{{ user.dataCadastro | date : "dd/MM/yyyy" }}</span>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+</div>
