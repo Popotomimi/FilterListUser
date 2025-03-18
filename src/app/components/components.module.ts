@@ -6,10 +6,24 @@ import { FormsModule } from '@angular/forms';
 import { UsersListComponent } from './users-list/users-list.component';
 import { PipesMoudle } from '../pipes/pipes.module';
 import { CommonModule } from '@angular/common';
+import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [UserDetailsComponent, FilterComponent, UsersListComponent],
+  declarations: [
+    UserDetailsComponent,
+    FilterComponent,
+    UsersListComponent,
+    FooterComponent,
+    NavbarComponent,
+  ],
   imports: [FormsModule, AngularMaterialModule, PipesMoudle, CommonModule],
-  exports: [UserDetailsComponent, FilterComponent, UsersListComponent],
+  exports: [
+    UserDetailsComponent,
+    FilterComponent,
+    UsersListComponent,
+    FooterComponent,
+    NavbarComponent,
+  ],
 })
 export class ComponentsModule {}

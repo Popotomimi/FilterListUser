@@ -1,0 +1,31 @@
+.text-light {
+    color: #f8f9fa !important;
+  }
+  
+  .icon-linkedin:hover svg {
+    fill: #0077b5 !important;
+  }
+  
+  .icon-github:hover svg {
+    fill: #181717 !important;
+  }
+  
+  .icon-linkedin svg,
+  .icon-github svg {
+    width: 50px;
+    height: 50px;
+    transition: fill 0.3s ease;
+  }
+  
+  a {
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .icon-linkedin svg,
+    .icon-github svg {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 15px;
+    }
+  }
